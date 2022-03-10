@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sRs-3C-Gvs">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="oLC-aA-nsS">
+            <objects>
+                <viewController id="npB-jB-7Zv" customClass="MainViewController" customModule="iPad_TrueDepth_Issue_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J7h-hm-4yD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTN-oG-r2e">
+                                <rect key="frame" x="110" y="237" width="155" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JPf-dV-zjy"/>
+                                </constraints>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <segue destination="FVj-Nw-f62" kind="show" id="nPP-rr-ISq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glK-Ov-r4O">
+                                <rect key="frame" x="140.33333333333337" y="610" width="94.333333333333343" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="g2N-9M-oQt"/>
+                                </constraints>
+                                <state key="normal" title="Clear Data"/>
+                                <connections>
+                                    <action selector="clearData:" destination="npB-jB-7Zv" eventType="primaryActionTriggered" id="4CL-p7-3VY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5W-7V-jGs">
+                                <rect key="frame" x="110" y="345" width="155" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Vcy-Q6-8Cl"/>
+                                </constraints>
+                                <state key="normal" title="Depth overlay"/>
+                                <connections>
+                                    <segue destination="lWr-9K-UtL" kind="show" id="nAi-YN-fjz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7br-QM-6JX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="glK-Ov-r4O" firstAttribute="centerX" secondItem="7br-QM-6JX" secondAttribute="centerX" id="1us-6D-eMg"/>
+                            <constraint firstItem="J5W-7V-jGs" firstAttribute="centerX" secondItem="RTN-oG-r2e" secondAttribute="centerX" id="8fF-IQ-njq"/>
+                            <constraint firstItem="7br-QM-6JX" firstAttribute="bottom" secondItem="glK-Ov-r4O" secondAttribute="bottom" constant="169" id="Cd0-71-5Tz"/>
+                            <constraint firstItem="glK-Ov-r4O" firstAttribute="top" secondItem="J5W-7V-jGs" secondAttribute="bottom" constant="184" id="MGI-lZ-hV9"/>
+                            <constraint firstItem="RTN-oG-r2e" firstAttribute="width" secondItem="J7h-hm-4yD" secondAttribute="width" multiplier="0.251208" id="QF4-y7-ooo"/>
+                            <constraint firstItem="J5W-7V-jGs" firstAttribute="leading" secondItem="7br-QM-6JX" secondAttribute="leading" constant="110" id="kRh-NH-qWt"/>
+                            <constraint firstItem="J5W-7V-jGs" firstAttribute="top" secondItem="RTN-oG-r2e" secondAttribute="bottom" constant="68" id="mHd-ja-uEc"/>
+                            <constraint firstItem="glK-Ov-r4O" firstAttribute="width" secondItem="J7h-hm-4yD" secondAttribute="width" multiplier="0.251208" id="n9K-2Q-U6S"/>
+                            <constraint firstItem="RTN-oG-r2e" firstAttribute="centerX" secondItem="7br-QM-6JX" secondAttribute="centerX" id="xRD-8w-SjV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wq9-UV-CIz"/>
+                    <connections>
+                        <outlet property="clearDataBtn" destination="glK-Ov-r4O" id="sqD-VX-phJ"/>
+                        <outlet property="depthSensorAnalysisButton" destination="J5W-7V-jGs" id="fqO-iG-N5n"/>
+                        <outlet property="streamBtn" destination="RTN-oG-r2e" id="6yr-t6-5Nf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KwK-by-HJi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="91.625615763546804"/>
+        </scene>
+        <!--Stream-->
+        <scene sceneID="14t-bm-AfS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Stream" id="FVj-Nw-f62" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="K6S-61-kbh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dt2-pg-aXk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1806" y="225"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BJR-nZ-eqZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sRs-3C-Gvs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qu4-GU-XjS">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="npB-jB-7Zv" kind="relationship" relationship="rootViewController" id="6vT-p4-Thp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Plx-cS-FRK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.768115942028992" y="92.410714285714278"/>
+        </scene>
+        <!--DepthSensorAnalysis-->
+        <scene sceneID="Axd-bb-ZEq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DepthSensorAnalysis" id="lWr-9K-UtL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="L13-ic-Lez"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nDW-MY-ETg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664" y="315"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
