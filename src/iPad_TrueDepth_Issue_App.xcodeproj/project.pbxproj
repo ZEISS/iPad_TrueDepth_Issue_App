@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BCAF271274FD104004209A6 /* DepthSensorAnalysis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCAF270274FD104004209A6 /* DepthSensorAnalysis.storyboard */; };
+		6BCAF273274FD5D7004209A6 /* DepthAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCAF272274FD5D7004209A6 /* DepthAnalysisViewController.swift */; };
+		6BCAF275274FDFF5004209A6 /* Gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BCAF274274FDFF5004209A6 /* Gradient.png */; };
+		870429532390F9C20016EB1B /* StreamDepthSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870429522390F9C20016EB1B /* StreamDepthSensor.swift */; };
+		870F624A24470ECC003D3D28 /* ExportUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F624924470ECC003D3D28 /* ExportUtils.swift */; };
+		8730F482238FF71D00E4E2BE /* CvHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8730F481238FF71D00E4E2BE /* CvHelper.mm */; };
+		8755E5D4242354EA009B35AF /* Stream.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8755E5D2242354EA009B35AF /* Stream.storyboard */; };
+		8755E5DC2423557F009B35AF /* SensorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755E5DB2423557E009B35AF /* SensorUtils.swift */; };
+		8755E5E0242355EA009B35AF /* AvUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755E5DF242355EA009B35AF /* AvUtils.swift */; };
+		8755E5E22423561F009B35AF /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8755E5E12423561F009B35AF /* Models.scnassets */; };
+		87633F49242505B7008BFD44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87633F48242505B7008BFD44 /* MainViewController.swift */; };
+		87741E9323796B1900049675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87741E9223796B1900049675 /* AppDelegate.swift */; };
+		87741E9923796B1A00049675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87741E9823796B1A00049675 /* Assets.xcassets */; };
+		87741E9C23796B1A00049675 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87741E9B23796B1A00049675 /* Preview Assets.xcassets */; };
+		87741E9F23796B1A00049675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87741E9D23796B1A00049675 /* LaunchScreen.storyboard */; };
+		87E0543D23796BD500EA2485 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E0542E23796BD400EA2485 /* CameraView.swift */; };
+		87E0544023796BD500EA2485 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E0543123796BD400EA2485 /* FileUtils.swift */; };
+		87E0544123796BD500EA2485 /* WebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E0543223796BD400EA2485 /* WebServer.swift */; };
+		87E0544223796BD500EA2485 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E0543323796BD400EA2485 /* StreamViewController.swift */; };
+		87E0544623796BD500EA2485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E0543823796BD400EA2485 /* Main.storyboard */; };
+		87E0544723796BD500EA2485 /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 87E0543A23796BD400EA2485 /* favicon.ico */; };
+		87E0544823796BD500EA2485 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 87E0543B23796BD400EA2485 /* index.html */; };
+		87E0544B2379AE7200EA2485 /* UiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E0544A2379AE7200EA2485 /* UiUtils.swift */; };
+		EE9C11DB26397A1400032567 /* notification.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE9C11DA26397A1400032567 /* notification.wav */; };
+		FBE8ABCC95EB734D474410C8 /* Pods_iPad_TrueDepth_Issue_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C12F472C8681D77674C8B1 /* Pods_iPad_TrueDepth_Issue_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EF14136BAC622C3C22A3B10 /* Pods-iPad_TrueDepth_Issue_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPad_TrueDepth_Issue_AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-iPad_TrueDepth_Issue_AppUITests/Pods-iPad_TrueDepth_Issue_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		36C12F472C8681D77674C8B1 /* Pods_iPad_TrueDepth_Issue_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPad_TrueDepth_Issue_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51A11905F88C73CDD564C561 /* Pods-iPad_TrueDepth_Issue_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPad_TrueDepth_Issue_AppTests.release.xcconfig"; path = "Target Support Files/Pods-iPad_TrueDepth_Issue_AppTests/Pods-iPad_TrueDepth_Issue_AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		6BCAF270274FD104004209A6 /* DepthSensorAnalysis.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DepthSensorAnalysis.storyboard; sourceTree = "<group>"; };
+		6BCAF272274FD5D7004209A6 /* DepthAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthAnalysisViewController.swift; sourceTree = "<group>"; };
+		6BCAF274274FDFF5004209A6 /* Gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gradient.png; path = iPad_TrueDepth_Issue_App/Resources/Gradient.png; sourceTree = "<group>"; };
+		6BCAF276274FE00F004209A6 /* Gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gradient.png; path = iPad_TrueDepth_Issue_App/Resources/Gradient.png; sourceTree = "<group>"; };
+		86BC0AF1FF5176484ECC64E3 /* Pods-iPad_TrueDepth_Issue_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPad_TrueDepth_Issue_App.release.xcconfig"; path = "Target Support Files/Pods-iPad_TrueDepth_Issue_App/Pods-iPad_TrueDepth_Issue_App.release.xcconfig"; sourceTree = "<group>"; };
+		870429522390F9C20016EB1B /* StreamDepthSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamDepthSensor.swift; sourceTree = "<group>"; };
+		8704302E237C1DA400CEE97B /* iPad_TrueDepth_Issue_App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPad_TrueDepth_Issue_App-Bridging-Header.h"; sourceTree = "<group>"; };
+		870F624924470ECC003D3D28 /* ExportUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportUtils.swift; sourceTree = "<group>"; };
+		8730F47C238FF5C000E4E2BE /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../libs/opencv2.framework; sourceTree = "<group>"; };
+		8730F47E238FF67800E4E2BE /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = libs/opencv2.framework; sourceTree = "<group>"; };
+		8730F480238FF71D00E4E2BE /* CvHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CvHelper.h; sourceTree = "<group>"; };
+		8730F481238FF71D00E4E2BE /* CvHelper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CvHelper.mm; sourceTree = "<group>"; };
+		8755E5D2242354EA009B35AF /* Stream.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stream.storyboard; sourceTree = "<group>"; };
+		8755E5DB2423557E009B35AF /* SensorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorUtils.swift; sourceTree = "<group>"; };
+		8755E5DF242355EA009B35AF /* AvUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvUtils.swift; sourceTree = "<group>"; };
+		8755E5E12423561F009B35AF /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		87633F48242505B7008BFD44 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		87741E8F23796B1900049675 /* iPad_TrueDepth_Issue_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPad_TrueDepth_Issue_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87741E9223796B1900049675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87741E9823796B1A00049675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87741E9B23796B1A00049675 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87741E9E23796B1A00049675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87741EA023796B1A00049675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E0542E23796BD400EA2485 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		87E0543123796BD400EA2485 /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+		87E0543223796BD400EA2485 /* WebServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServer.swift; sourceTree = "<group>"; };
+		87E0543323796BD400EA2485 /* StreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		87E0543823796BD400EA2485 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		87E0543A23796BD400EA2485 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		87E0543B23796BD400EA2485 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		87E0544A2379AE7200EA2485 /* UiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiUtils.swift; sourceTree = "<group>"; };
+		8CFE68453BD01CACBC44F5DD /* Pods-iPad_TrueDepth_Issue_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPad_TrueDepth_Issue_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-iPad_TrueDepth_Issue_AppTests/Pods-iPad_TrueDepth_Issue_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9431AC261C370C8AAD9FE78A /* Pods-iPad_TrueDepth_Issue_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPad_TrueDepth_Issue_App.debug.xcconfig"; path = "Target Support Files/Pods-iPad_TrueDepth_Issue_App/Pods-iPad_TrueDepth_Issue_App.debug.xcconfig"; sourceTree = "<group>"; };
+		A27F1F3B0A31456FFC6FAAE2 /* Pods-iPad_TrueDepth_Issue_AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPad_TrueDepth_Issue_AppUITests.release.xcconfig"; path = "Target Support Files/Pods-iPad_TrueDepth_Issue_AppUITests/Pods-iPad_TrueDepth_Issue_AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C976B1DCBFAA1E0D8B70B176 /* Pods_A_Dream_Of_SensorsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A_Dream_Of_SensorsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5DD4FFE8E54187E413B9B2 /* Pods_A_Dream_Of_SensorsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A_Dream_Of_SensorsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9C11DA26397A1400032567 /* notification.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = notification.wav; path = iPad_TrueDepth_Issue_App/notification.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87741E8C23796B1900049675 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE8ABCC95EB734D474410C8 /* Pods_iPad_TrueDepth_Issue_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18694CB40B63B243D244558E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8730F47C238FF5C000E4E2BE /* opencv2.framework */,
+				8730F47E238FF67800E4E2BE /* opencv2.framework */,
+				C976B1DCBFAA1E0D8B70B176 /* Pods_A_Dream_Of_SensorsTests.framework */,
+				DD5DD4FFE8E54187E413B9B2 /* Pods_A_Dream_Of_SensorsUITests.framework */,
+				36C12F472C8681D77674C8B1 /* Pods_iPad_TrueDepth_Issue_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		870F624B2447401E003D3D28 /* native */ = {
+			isa = PBXGroup;
+			children = (
+				8730F480238FF71D00E4E2BE /* CvHelper.h */,
+				8730F481238FF71D00E4E2BE /* CvHelper.mm */,
+			);
+			path = native;
+			sourceTree = "<group>";
+		};
+		87741E8623796B1900049675 = {
+			isa = PBXGroup;
+			children = (
+				6BCAF276274FE00F004209A6 /* Gradient.png */,
+				EE9C11DA26397A1400032567 /* notification.wav */,
+				87741E9123796B1900049675 /* iPad_TrueDepth_Issue_App */,
+				87741E9023796B1900049675 /* Products */,
+				B89937861DC926F6712CB37C /* Pods */,
+				18694CB40B63B243D244558E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87741E9023796B1900049675 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87741E8F23796B1900049675 /* iPad_TrueDepth_Issue_App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87741E9123796B1900049675 /* iPad_TrueDepth_Issue_App */ = {
+			isa = PBXGroup;
+			children = (
+				87B03C54244F2C8D00BF8502 /* Storyboards */,
+				87B03C53244F2C6E00BF8502 /* Controllers */,
+				870F624B2447401E003D3D28 /* native */,
+				87DB23C5238E834C006F228D /* Utils */,
+				87E0543423796BD400EA2485 /* Sensors */,
+				87E0543923796BD400EA2485 /* server_files */,
+				87741E9223796B1900049675 /* AppDelegate.swift */,
+				87E0542E23796BD400EA2485 /* CameraView.swift */,
+				87E0543223796BD400EA2485 /* WebServer.swift */,
+				8755E5E12423561F009B35AF /* Models.scnassets */,
+				87741E9823796B1A00049675 /* Assets.xcassets */,
+				87741E9D23796B1A00049675 /* LaunchScreen.storyboard */,
+				87741EA023796B1A00049675 /* Info.plist */,
+				87741E9A23796B1A00049675 /* Preview Content */,
+				8704302E237C1DA400CEE97B /* iPad_TrueDepth_Issue_App-Bridging-Header.h */,
+			);
+			path = iPad_TrueDepth_Issue_App;
+			sourceTree = "<group>";
+		};
+		87741E9A23796B1A00049675 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				87741E9B23796B1A00049675 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		87B03C53244F2C6E00BF8502 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				87633F48242505B7008BFD44 /* MainViewController.swift */,
+				87E0543323796BD400EA2485 /* StreamViewController.swift */,
+				6BCAF272274FD5D7004209A6 /* DepthAnalysisViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		87B03C54244F2C8D00BF8502 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				87E0543823796BD400EA2485 /* Main.storyboard */,
+				8755E5D2242354EA009B35AF /* Stream.storyboard */,
+				6BCAF270274FD104004209A6 /* DepthSensorAnalysis.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		87DB23C5238E834C006F228D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				87E0544A2379AE7200EA2485 /* UiUtils.swift */,
+				87E0543123796BD400EA2485 /* FileUtils.swift */,
+				8755E5DB2423557E009B35AF /* SensorUtils.swift */,
+				8755E5DF242355EA009B35AF /* AvUtils.swift */,
+				870F624924470ECC003D3D28 /* ExportUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		87E0543423796BD400EA2485 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				870429522390F9C20016EB1B /* StreamDepthSensor.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		87E0543923796BD400EA2485 /* server_files */ = {
+			isa = PBXGroup;
+			children = (
+				87E0543A23796BD400EA2485 /* favicon.ico */,
+				87E0543B23796BD400EA2485 /* index.html */,
+			);
+			path = server_files;
+			sourceTree = "<group>";
+		};
+		B89937861DC926F6712CB37C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9431AC261C370C8AAD9FE78A /* Pods-iPad_TrueDepth_Issue_App.debug.xcconfig */,
+				86BC0AF1FF5176484ECC64E3 /* Pods-iPad_TrueDepth_Issue_App.release.xcconfig */,
+				8CFE68453BD01CACBC44F5DD /* Pods-iPad_TrueDepth_Issue_AppTests.debug.xcconfig */,
+				51A11905F88C73CDD564C561 /* Pods-iPad_TrueDepth_Issue_AppTests.release.xcconfig */,
+				0EF14136BAC622C3C22A3B10 /* Pods-iPad_TrueDepth_Issue_AppUITests.debug.xcconfig */,
+				A27F1F3B0A31456FFC6FAAE2 /* Pods-iPad_TrueDepth_Issue_AppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87741E8E23796B1900049675 /* iPad_TrueDepth_Issue_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87741EB923796B1A00049675 /* Build configuration list for PBXNativeTarget "iPad_TrueDepth_Issue_App" */;
+			buildPhases = (
+				97850FB3929773826EC1C006 /* [CP] Check Pods Manifest.lock */,
+				87741E8B23796B1900049675 /* Sources */,
+				87741E8C23796B1900049675 /* Frameworks */,
+				87741E8D23796B1900049675 /* Resources */,
+				5D9D9D8392B76D230B3752C5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPad_TrueDepth_Issue_App;
+			productName = iPad_TrueDepth_Issue_App;
+			productReference = 87741E8F23796B1900049675 /* iPad_TrueDepth_Issue_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87741E8723796B1900049675 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Thomas Lindemeier";
+				TargetAttributes = {
+					87741E8E23796B1900049675 = {
+						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 87741E8A23796B1900049675 /* Build configuration list for PBXProject "iPad_TrueDepth_Issue_App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87741E8623796B1900049675;
+			productRefGroup = 87741E9023796B1900049675 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87741E8E23796B1900049675 /* iPad_TrueDepth_Issue_App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87741E8D23796B1900049675 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BCAF275274FDFF5004209A6 /* Gradient.png in Resources */,
+				EE9C11DB26397A1400032567 /* notification.wav in Resources */,
+				87E0544823796BD500EA2485 /* index.html in Resources */,
+				87E0544623796BD500EA2485 /* Main.storyboard in Resources */,
+				8755E5E22423561F009B35AF /* Models.scnassets in Resources */,
+				87E0544723796BD500EA2485 /* favicon.ico in Resources */,
+				87741E9F23796B1A00049675 /* LaunchScreen.storyboard in Resources */,
+				6BCAF271274FD104004209A6 /* DepthSensorAnalysis.storyboard in Resources */,
+				87741E9C23796B1A00049675 /* Preview Assets.xcassets in Resources */,
+				8755E5D4242354EA009B35AF /* Stream.storyboard in Resources */,
+				87741E9923796B1A00049675 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D9D9D8392B76D230B3752C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iPad_TrueDepth_Issue_App/Pods-iPad_TrueDepth_Issue_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iPad_TrueDepth_Issue_App/Pods-iPad_TrueDepth_Issue_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iPad_TrueDepth_Issue_App/Pods-iPad_TrueDepth_Issue_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97850FB3929773826EC1C006 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iPad_TrueDepth_Issue_App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87741E8B23796B1900049675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87741E9323796B1900049675 /* AppDelegate.swift in Sources */,
+				870429532390F9C20016EB1B /* StreamDepthSensor.swift in Sources */,
+				6BCAF273274FD5D7004209A6 /* DepthAnalysisViewController.swift in Sources */,
+				87E0544123796BD500EA2485 /* WebServer.swift in Sources */,
+				870F624A24470ECC003D3D28 /* ExportUtils.swift in Sources */,
+				87E0544023796BD500EA2485 /* FileUtils.swift in Sources */,
+				87633F49242505B7008BFD44 /* MainViewController.swift in Sources */,
+				87E0544B2379AE7200EA2485 /* UiUtils.swift in Sources */,
+				8755E5DC2423557F009B35AF /* SensorUtils.swift in Sources */,
+				8730F482238FF71D00E4E2BE /* CvHelper.mm in Sources */,
+				87E0543D23796BD500EA2485 /* CameraView.swift in Sources */,
+				8755E5E0242355EA009B35AF /* AvUtils.swift in Sources */,
+				87E0544223796BD500EA2485 /* StreamViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		87741E9D23796B1A00049675 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87741E9E23796B1A00049675 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87741EB723796B1A00049675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87741EB823796B1A00049675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87741EBA23796B1A00049675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9431AC261C370C8AAD9FE78A /* Pods-iPad_TrueDepth_Issue_App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iPad_TrueDepth_Issue_App/Preview Content\"";
+				DEVELOPMENT_TEAM = SD67P56K4E;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = iPad_TrueDepth_Issue_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.zeiss.crt.sensors.enterprise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iPad_TrueDepth_Issue_App/iPad_TrueDepth_Issue_App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87741EBB23796B1A00049675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86BC0AF1FF5176484ECC64E3 /* Pods-iPad_TrueDepth_Issue_App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iPad_TrueDepth_Issue_App/Preview Content\"";
+				DEVELOPMENT_TEAM = SD67P56K4E;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = iPad_TrueDepth_Issue_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.zeiss.crt.sensors.enterprise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iPad_TrueDepth_Issue_App/iPad_TrueDepth_Issue_App-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87741E8A23796B1900049675 /* Build configuration list for PBXProject "iPad_TrueDepth_Issue_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87741EB723796B1A00049675 /* Debug */,
+				87741EB823796B1A00049675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87741EB923796B1A00049675 /* Build configuration list for PBXNativeTarget "iPad_TrueDepth_Issue_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87741EBA23796B1A00049675 /* Debug */,
+				87741EBB23796B1A00049675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87741E8723796B1900049675 /* Project object */;
+}
