@@ -256,7 +256,7 @@ class DepthAnalysisViewController: UIViewController, ARSCNViewDelegate, ARSessio
             let frameWidth = sceneView.frame.size.width
             let frameHeight = sceneView.frame.size.height
             let targetSize = CGSize(width: frameWidth, height: frameHeight)
-            self.viewTrans = frame.viewTrans(for: UIInterfaceOrientation.portrait, viewportSize: targetSize)
+            self.viewTrans = frame.displayTransform(for: UIInterfaceOrientation.portrait, viewportSize: targetSize)
 
             renderDepthColorOverlay(depthBuffer: depthBuffer, colorBuffer: colorBuffer, viewTrans: self.viewTrans!, targetSize: targetSize)
         }
